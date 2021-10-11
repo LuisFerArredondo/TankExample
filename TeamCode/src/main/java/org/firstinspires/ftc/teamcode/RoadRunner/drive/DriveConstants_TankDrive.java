@@ -17,8 +17,8 @@ import com.qualcomm.robotcore.hardware.PIDFCoefficients;
  */
 @Config
 public class DriveConstants_TankDrive {
-    //TODO: Si vas a usar un TankDrive, en los OpModesde prueba, cambia los que digan SampleMecanumDrive
-    // por SampleTankDrive
+    //TODO: Si vas a usar un TankDrive, en los OpModes de prueba, cambia lo que diga
+    // SampleMecanumDrive por SampleTankDrive
     // \(￣︶￣*\))
     /*
      * These are motor constants that should be listed online for your motors.
@@ -34,6 +34,7 @@ public class DriveConstants_TankDrive {
      * If using the built-in motor velocity PID, update MOTOR_VELO_PID with the tuned coefficients
      * from DriveVelocityPIDTuner.
      */
+
     public static final boolean RUN_USING_ENCODER = true;//TODO: no le juegen al vivo y le pongan false
     public static PIDFCoefficients MOTOR_VELO_PID = new PIDFCoefficients(0, 0, 0,
             getMotorVelocityF(MAX_RPM / 60 * TICKS_PER_REV));
@@ -51,7 +52,11 @@ public class DriveConstants_TankDrive {
     /**En el straight Test, porbar hasta que la distancia dada en el simulador
      * concuerde con la de verdad
      */
-    //1 *(66/60.85); //TODO: output (wheel) speed / input (motor) speed
+    //1 *(66/60.85);
+    // TODO: output (wheel) speed / input (motor) speed
+    //  en base a los valores obtenidos continuar con el tuneo hasta que el
+    //  error sea 0
+
 
     public static double TRACK_WIDTH = 15; // in
     /**En el Turn Test que sea muy preciso el giro, con eso*/

@@ -50,7 +50,7 @@ public class DriveConstants_TankDrive {
     public static double WHEEL_RADIUS = 1.7715; // in
     public static double GEAR_RATIO =  1.085;
     /**En el straight Test, porbar hasta que la distancia dada en el simulador
-     * concuerde con la de verdad
+     * concuerde con la recorrida en fisico
      */
     //1 *(66/60.85);
     // TODO: output (wheel) speed / input (motor) speed
